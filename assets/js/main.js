@@ -28,7 +28,7 @@ const linkAction = () => {
 };
 navLink.forEach((link) => link.addEventListener("click", linkAction));
 
-/*==================== ACCORDION SKILLS ====================*/
+/*==================== SKILLS ====================*/
 
 /*==================== QUALIFICATION TABS ====================*/
 
