@@ -348,6 +348,10 @@ img {
   margin-right: var(--mb-0-75);
 }
 
+.skills-name-icon {
+  font-size: var(--h3-font-size);
+}
+
 .skills-category {
   font-size: var(--h3-font-size);
 }
@@ -416,15 +420,86 @@ img {
   overflow: hidden;
 }
 
-.skills-expand .skills-list {
+.skills-show .skills-list {
   height: max-content;
   margin-bottom: var(--mb-2-5);
 }
 
-.skills-expand .skills-arrow {
+.skills-show .skills-arrow {
   transform: rotate(-180deg);
 }
-/*==================== QUALIFICATION ====================*/
+/*==================== EXPERIENCE ====================*/
+.exp-tabs {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2);
+}
+
+.exp-button {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+}
+
+.exp-button:hover {
+  color: var(--first-color);
+}
+
+.exp-icon {
+  font-size: var(--h3-font-size);
+  margin-right: var(--mb-0-25);
+}
+
+.exp-data {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+}
+
+.exp-title {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.exp-subtitle {
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.exp-calendar {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.exp-circle {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: var(--first-color);
+  border-radius: 50%;
+}
+
+.exp-line {
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: var(--first-color);
+  transform: translate(6px, -8px);
+}
+
+.experience [data-content] {
+  display: none;
+}
+
+/* WHAT?? even a space matters that much?! what is this?! */
+.exp-show[data-content] {
+  display: block;
+}
+
+.exp-button.exp-show {
+  color: var(--first-color);
+}
 
 /*==================== SERVICES ====================*/
 
