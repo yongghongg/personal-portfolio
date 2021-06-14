@@ -501,13 +501,66 @@ img {
   color: var(--first-color);
 }
 
-/*==================== SERVICES ====================*/
+/*==================== PROJECT ====================*/
+.project-container {
+  overflow: initial;
+}
 
-/* Active Modal */
+.project-content {
+  padding: 0 1.5rem;
+}
 
-/*==================== PORTFOLIO ====================*/
+.project-img {
+  width: 500px;
+  height: 100%;
+  border-radius: 0.5rem;
+  justify-self: center;
+}
 
-/*==================== PROJECT IN MIND ====================*/
+.project-title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+
+.project-description {
+  margin-bottom: var(--mb-0-75);
+}
+
+.project-button:hover .button-icon {
+  transform: translateX(0.25rem);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
+}
+
+.swiper-project-icon {
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.swiper-button-prev {
+  left: -0.5rem;
+}
+
+.swiper-button-next {
+  right: -0.5rem;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: -2.5rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--first-color);
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet {
+  outline: none;
+}
 
 /*==================== TESTIMONIAL ====================*/
 

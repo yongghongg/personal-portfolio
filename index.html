@@ -10,7 +10,7 @@
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
     <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css" />
@@ -36,9 +36,9 @@
             <li class="nav-item">
               <a href="#experience" class="nav-link"> .experience </a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a href="#resume" class="nav-link"> .resume </a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a href="#contact" class="nav-link"> .contact() </a>
             </li>
@@ -121,7 +121,7 @@
       </div>
       <!--==================== ABOUT ====================-->
       <section class="about section" id="about">
-        <h2 class="section-title">About Me</h2>
+        <h2 class="section-title">.about</h2>
         <span class="section-subtitle">My introduction</span>
         <div class="about-container grid container">
           <div class="about-data">
@@ -145,7 +145,7 @@
 
       <!--==================== SKILLS ====================-->
       <section class="skills section" id="skills">
-        <h2 class="section-title">Skills</h2>
+        <h2 class="section-title">.skills</h2>
         <span class="section-subtitle">My language skills</span>
 
         <div class="skills-container container grid">
@@ -261,7 +261,7 @@
 
       <!--==================== EXPERIENCE (QUALIFICATION)====================-->
       <section class="experience section" id="experience">
-        <h2 class="section-title">Experience</h2>
+        <h2 class="section-title">.experience</h2>
         <span class="section-subtitle">My personal journey</span>
 
         <div class="exp-container container">
@@ -379,10 +379,94 @@
       <!-- <section class="services section" id="services"></section> -->
 
       <!--==================== RESUME (PORTFOLIO)====================-->
-      <section class="resume section" id="resume"></section>
+      <!-- <section class="resume section" id="resume"></section> -->
 
       <!--==================== PROJECTS ====================-->
-      <section class="project section" id="projects"></section>
+      <section class="project section" id="projects">
+        <h2 class="section-title">.projects</h2>
+        <span class="section-subtitle">Most recent projects</span>
+
+        <div class="project-container container swiper-container">
+          <div class="swiper-wrapper">
+            <!--==================== PROJECT 1====================-->
+            <div class="project-content grid swiper-slide">
+              <img
+                src="assets/img/project-1.png"
+                alt="Screenshot of my DevConnector project"
+                class="project-img"
+              />
+
+              <div class="project-data">
+                <h3 class="project-title">Social Network App</h3>
+                <p class="project-description">
+                  Full MERN stack web app that allows users to create profiles
+                  and connect to each other.
+                </p>
+                <a
+                  href="https://github.com/yongghongg/react-social-media-app"
+                  target="_blank"
+                  class="button button-flex button-small project-button"
+                  >.SeeMore()<i class="uil uil-arrow-right button-icon"></i
+                ></a>
+              </div>
+            </div>
+            <!--==================== PROJECT 3====================-->
+            <div class="project-content grid swiper-slide">
+              <img
+                src="assets/img/project-3.png"
+                alt="Screenshot of my GitHub most starred project"
+                class="project-img"
+              />
+
+              <div class="project-data">
+                <h3 class="project-title">Japanese Dictionary Quiz App</h3>
+                <p class="project-description">
+                  A simple iOS Japanese dictionary app that records your
+                  searched words and lets you take a quiz on them.
+                </p>
+                <a
+                  href="https://github.com/yongghongg/Japanese-Dict-Quiz-App"
+                  target="_blank"
+                  class="button button-flex button-small project-button"
+                  >.SeeMore()<i class="uil uil-arrow-right button-icon"></i
+                ></a>
+              </div>
+            </div>
+            <!--==================== PROJECT 2====================-->
+            <div class="project-content grid swiper-slide">
+              <img
+                src="assets/img/project-2.png"
+                alt="Screenshot of my GitHub most starred project"
+                class="project-img"
+              />
+
+              <div class="project-data">
+                <h3 class="project-title">GitHub Most Starred Repo</h3>
+                <p class="project-description">
+                  A simple React app that finds the most starred repository on
+                  Github.
+                </p>
+                <a
+                  href="https://github.com/yongghongg/github-most-starred-project"
+                  target="_blank"
+                  class="button button-flex button-small project-button"
+                  >.SeeMore()<i class="uil uil-arrow-right button-icon"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- add swiper button -->
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-project-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-project-icon"></i>
+          </div>
+          <!-- add swiper pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
 
       <!--==================== TESTIMONIAL ====================-->
       <!-- <section class="testimonial section"></section> -->
@@ -397,7 +481,7 @@
     <!--==================== SCROLL TOP ====================-->
 
     <!--==================== SWIPER JS ====================-->
-    <script src=""></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
