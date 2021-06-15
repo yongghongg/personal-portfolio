@@ -25,16 +25,19 @@
         <div class="nav-menu" id="nav-menu">
           <ul class="nav-list grid">
             <li class="nav-item">
-              <a href="#about" class="nav-link"> .about </a>
+              <a href="#home" class="nav-link active-link"> .home </a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link active-link"> .about </a>
             </li>
             <li class="nav-item">
               <a href="#skills" class="nav-link"> .skills </a>
             </li>
             <li class="nav-item">
-              <a href="#projects" class="nav-link"> .projects </a>
+              <a href="#experience" class="nav-link"> .experience </a>
             </li>
             <li class="nav-item">
-              <a href="#experience" class="nav-link"> .experience </a>
+              <a href="#projects" class="nav-link"> .projects </a>
             </li>
             <!-- <li class="nav-item">
               <a href="#resume" class="nav-link"> .resume </a>
@@ -47,6 +50,8 @@
         </div>
 
         <div class="nav-btn">
+          <!-- Theme change button -->
+          <i class="uil uil-moon change-theme-icon" id="theme-button"></i>
           <div class="nav-toggle" id="nav-toggle">
             <i class="uil uil-apps"></i>
           </div>
@@ -57,7 +62,7 @@
     <!--==================== MAIN ====================-->
     <main class="main">
       <!--==================== HOME ====================-->
-      <section class="home section" id="home"></section>
+      <section class="home section" id="home">
       <div class="home-container container grid">
         <div class="home-content grid">
           <div class="home-social">
@@ -114,11 +119,12 @@
             <h3 class="home-subtitle">This is Tan Yonghong.</h3>
             <p class="home-description">A full stack developer.</p>
             <a href="#contact" class="button button-flex">
-              Contact Me <i class="uil uil-message button-icon"></i>
+              .contact() <i class="uil uil-message button-icon"></i>
             </a>
           </div>
         </div>
       </div>
+    </section>
       <!--==================== ABOUT ====================-->
       <section class="about section" id="about">
         <h2 class="section-title">.about</h2>
@@ -126,6 +132,12 @@
         <div class="about-container grid container">
           <div class="about-data">
             <p class="about-description">
+              <!-- {
+                madeIn: "Malaysia",
+                manufactureDate: "4 Dec 1993",
+                location: "Tokyo, Japan",
+
+              } -->
               Currently based in Tokyo, Japan. A junior web developer mainly
               working with the MERN stack. Also skilled in Python and passionate
               about Machine Learning technology.
@@ -136,7 +148,7 @@
                 download=""
                 class="button button-flex"
               >
-                Download CV <i class="uil uil-download-alt button-icon"></i
+                .downloadCV() <i class="uil uil-download-alt button-icon"></i
               ></a>
             </div>
           </div>
@@ -402,15 +414,15 @@
                   Full MERN stack web app that allows users to create profiles
                   and connect to each other.
                 </p>
-                <a
+              </div>
+              <a
                   href="https://github.com/yongghongg/react-social-media-app"
                   target="_blank"
                   class="button button-flex button-small project-button"
-                  >.SeeMore()<i class="uil uil-arrow-right button-icon"></i
-                ></a>
-              </div>
+                  >.seeMore()<i class="uil uil-arrow-right button-icon"></i>
+              </a>
             </div>
-            <!--==================== PROJECT 3====================-->
+            <!--==================== PROJECT 2====================-->
             <div class="project-content grid swiper-slide">
               <img
                 src="assets/img/project-3.png"
@@ -424,13 +436,13 @@
                   A simple iOS Japanese dictionary app that records your
                   searched words and lets you take a quiz on them.
                 </p>
-                <a
-                  href="https://github.com/yongghongg/Japanese-Dict-Quiz-App"
-                  target="_blank"
-                  class="button button-flex button-small project-button"
-                  >.SeeMore()<i class="uil uil-arrow-right button-icon"></i
-                ></a>
               </div>
+              <a
+                href="https://github.com/yongghongg/Japanese-Dict-Quiz-App"
+                target="_blank"
+                class="button button-flex button-small project-button"
+                >.seeMore()<i class="uil uil-arrow-right button-icon"></i
+              ></a>
             </div>
             <!--==================== PROJECT 2====================-->
             <div class="project-content grid swiper-slide">
@@ -446,13 +458,13 @@
                   A simple React app that finds the most starred repository on
                   Github.
                 </p>
-                <a
-                  href="https://github.com/yongghongg/github-most-starred-project"
-                  target="_blank"
-                  class="button button-flex button-small project-button"
-                  >.SeeMore()<i class="uil uil-arrow-right button-icon"></i
-                ></a>
               </div>
+              <a
+                href="https://github.com/yongghongg/github-most-starred-project"
+                target="_blank"
+                class="button button-flex button-small project-button"
+                >.seeMore()<i class="uil uil-arrow-right button-icon"></i
+              ></a>
             </div>
           </div>
 
@@ -472,13 +484,82 @@
       <!-- <section class="testimonial section"></section> -->
 
       <!--==================== CONTACT ME ====================-->
-      <section class="contact section" id="contact"></section>
+      <section class="contact section" id="contact">
+        <h2 class="section-title">.contact()</h2>
+        <span class="section-subtitle">Let's get in touch!</span>
+        <div class="contact-container container grid">
+          <form action="" class="contact-form grid">
+            <div class="contact-inputs grid">
+              <div class="contact-content">
+                <label for="" class="contact-label">Name</label>
+                <input type="text" class="contact-input" />
+              </div>
+              <div class="contact-content">
+                <label for="" class="contact-label">Email</label>
+                <input type="text" class="contact-input" />
+              </div>
+              <div class="contact-content">
+                <label for="" class="contact-label">Message</label>
+                <textarea
+                  name=""
+                  id=""
+                  cols="0"
+                  rows="5"
+                  class="contact-input"
+                />
+               </textarea>
+              </div>
+              <div>
+                <a href="#" class="button-flex button"
+                  >.send()<i class="uil uil-message button-icon"></i
+                ></a>
+              </div>
+            </div>
+          </form>
+          <!-- <div>
+            <div class="contact-info">
+              <i class="uil uil-envelope"></i>
+              <div>
+                <h3 class="contact-title">Email</h3>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </section>
     </main>
 
     <!--==================== FOOTER ====================-->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer-bg">
+        <div class="footer-container container grid">
+          <div>
+            <h1 class="footer-title">TYH</h1>
+            <span class="footer-subtitle">Full Stack Developer</span>
+          </div>
+          <ul class="footer-links">
+            <li>
+              <a href="#about" class="footer-link"> .about </a>
+            </li>
+            <li>
+              <a href="#skills" class="footer-link"> .skills </a>
+            </li>
+            <li>
+              <a href="#experience" class="footer-link"> .experience </a>
+            </li>
+            <li>
+              <a href="#projects" class="footer-link"> .projects </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+      <p class="footer-copyright"> -- Created by Tan with <i class="uil uil-heart footer-icon"></i> --</p>
+    </footer>
 
     <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scroll-up" id="scroll-up">
+      <i class="uil uil-angle-double-up scroll-up-icon"></i>
+    </a>
 
     <!--==================== SWIPER JS ====================-->
     <script src="assets/js/swiper-bundle.min.js"></script>
