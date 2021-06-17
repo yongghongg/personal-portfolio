@@ -639,6 +639,12 @@ img {
   justify-content: center;
 }
 
+.contact-button {
+  font-size: var(--font-medium);
+  font-family: var(--body-font);
+  border: none;
+}
+
 /*==================== FOOTER ====================*/
 .footer {
   padding-top: 2rem;

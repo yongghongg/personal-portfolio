@@ -526,31 +526,33 @@
         <h2 class="section-title">.contact()</h2>
         <span class="section-subtitle">Let's get in touch!</span>
         <div class="contact-container container grid">
-          <form action="" class="contact-form grid">
+          <form action="https://formsubmit.co/yongghongg@hotmail.com" class="contact-form grid" method="POST">
+            <input type="hidden" name="_subject" value="Thank you for contacting me!">
+            <input type="hidden" name="_next" value="https://yongghongg.github.io/personal-portfolio/index.html">
             <div class="contact-inputs grid">
               <div class="contact-content">
-                <label for="" class="contact-label">Name</label>
-                <input type="text" class="contact-input" />
+                <label for="name" class="contact-label">Name</label>
+                <input type="text" class="contact-input" name="name" placeholder="Your name" required/>
               </div>
               <div class="contact-content">
-                <label for="" class="contact-label">Email</label>
-                <input type="text" class="contact-input" />
+                <label for="email" class="contact-label">Email</label>
+                <input type="email" class="contact-input" name="email" placeholder="Your email" required/>
               </div>
               <div class="contact-content">
-                <label for="" class="contact-label">Message</label>
+                <label for="message" class="contact-label">Message</label>
                 <textarea
-                  name=""
-                  id=""
+                  name="message"
+                  class="contact-input"
+                  placeholder="Send me a message"
                   cols="0"
                   rows="5"
-                  class="contact-input"
-                />
-               </textarea>
+                /></textarea>
               </div>
               <div class="contact-send-button">
-                <a href="#" class="button-flex button contact-button"
+                <button type="submit" class="button-flex button contact-button" value="Submit"
+  font-size: var(--small-font-size);
                   >.send()<i class="uil uil-message button-icon"></i
-                ></a>
+                ></button>
               </div>
             </div>
           </form>
