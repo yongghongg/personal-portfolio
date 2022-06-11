@@ -37,14 +37,16 @@ function toggleSkills() {
   let selectedClass = this.parentNode.className;
 
   // make everything hide
-  for (let i = 0; i < skillsContent.length; i++) {
-    skillsContent[i].className = 'skills-content skills-hide';
-  }
+  // for (let i = 0; i < skillsContent.length; i++) {
+  //   skillsContent[i].className = 'skills-content skills-hide';
+  // }
 
   // if the selected class was hidden --> change it to expand
   // if the selected class was not hidden --> it will be hidden anyway
   if (selectedClass === 'skills-content skills-hide') {
     this.parentNode.className = 'skills-content skills-show';
+  } else {
+    this.parentNode.className = 'skills-content skills-hide';
   }
 }
 
