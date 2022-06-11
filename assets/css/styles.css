@@ -1,5 +1,5 @@
 /*==================== GOOGLE FONTS ====================*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 /*==================== VARIABLES CSS ====================*/
 :root {
   --header-height: 3rem;
@@ -22,9 +22,10 @@
   --scroll-bar-color: hsl(var(--hue-color), 10%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 10%, 80%);
   --container-color: #fff;
+  --link-color: #a100ff;
 
   /*========== Font and typography ==========*/
-  --body-font: "Poppins", sans-serif;
+  --body-font: 'Poppins', sans-serif;
 
   /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
   --big-font-size: 2rem;
@@ -60,7 +61,7 @@
 /* Font size for large devices */
 @media screen and (min-width: 968px) {
   :root {
-    --big-font-size: 3rem;
+    --big-font-size: 2.5rem;
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
@@ -134,6 +135,14 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+a.link {
+  text-decoration: underline;
+  color: var(--first-color);
+}
+a.link:hover {
+  color: var(--link-color);
 }
 
 img {
@@ -292,8 +301,8 @@ img {
   color: var(--first-color);
 }
 
-.home-social:hover {
-  color: var(--first-color-alt);
+.home-social-icon:hover {
+  color: var(--link-color);
 }
 
 .home-blob {
@@ -505,14 +514,18 @@ img {
 }
 
 .exp-subtitle {
-  display: inline-block;
+  display: block;
   font-size: var(--small-font-size);
-  margin-bottom: var(--mb-1);
+}
+
+.exp-highlight {
+  display: flex;
 }
 
 .exp-calendar {
   font-size: var(--small-font-size);
   color: var(--text-color-light);
+  margin-bottom: var(--mb-0-25);
 }
 
 .exp-circle {
@@ -563,7 +576,11 @@ img {
 
 .project-title {
   font-size: var(--h3-font-size);
+}
+
+.project-subtitle {
   margin-bottom: var(--mb-0-5);
+
 }
 
 .project-description {
@@ -576,7 +593,7 @@ img {
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  content: "";
+  content: '';
 }
 
 .swiper-project-icon {
